@@ -9,7 +9,7 @@ spec:
       app: gcp
   template:
     metadata:
-      labels
+      labels:
         app: gcp
     spec:
       containers:
