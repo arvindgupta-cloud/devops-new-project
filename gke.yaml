@@ -20,4 +20,20 @@ spec:
         env:
           - name: PORT
             value: "5000"
+---
+apiVersion: "v1"
+kind: "Service"
+metadata: 
+  name: "gecp-devops-gcke-service"
+  namespace: "arvind"
+  labels:
+    app.kubernetes.io/managed-by: "gcp-cloud-build-deploy"
+spec:
+  ports:
+  - protocol: "TCP"
+    port: 80
+    targetPort: 5000
+  selector:
+    app: "gcp"
+  type: "LoadBalancer"
   
