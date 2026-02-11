@@ -13,7 +13,7 @@ steps:
   - --filename=gke.yaml
   - --image=gcr.io/$PROJECT_ID/gcpdevops
   - --location=us-central1
-  - --cluster= autopilot-cluster-1
+  - --cluster=autopilot-cluster-1
   - --namespace=arvind
 
 options:
